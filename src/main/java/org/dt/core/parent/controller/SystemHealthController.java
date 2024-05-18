@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/system")
+@CrossOrigin("*")
 @Component
 @Slf4j
 public class SystemHealthController {

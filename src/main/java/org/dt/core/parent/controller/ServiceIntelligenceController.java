@@ -11,14 +11,15 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/intelligence")
+@CrossOrigin("*")
 public class ServiceIntelligenceController {
 
     @Autowired
     ServiceIntelligenceService serviceIntelligenceService;
 
-//    @PostMapping
-//    ResponseEntity<VulnerableFunctionalities> processUserQuery(@RequestBody String promptData){
-//        List<String> vulnerableHealthParameterIds = serviceIntelligenceService.processUserQuery(promptData);
-//
-//    }
+    @PostMapping
+    ResponseEntity<VulnerableFunctionalities> processUserQuery(@RequestBody String promptData){
+        List<String> vulnerableHealthParameterIds = serviceIntelligenceService.processUserQuery(promptData);
+        return ResponseEntity.ok(VulnerableFunctionalities.builder().healthCheckParamIds(vulnerableHealthParameterIds).build());
+    }
 }

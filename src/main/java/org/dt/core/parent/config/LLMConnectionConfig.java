@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 import java.time.Duration;
+import java.util.Map;
 
 @Configuration
 @ConfigurationProperties(prefix = LLMConnectionConfig.PREFIX, ignoreUnknownFields = false)
@@ -21,4 +22,6 @@ public class LLMConnectionConfig {
     private String url;
 
     private Long waitBeforeFallbackTrigger;
+
+    private Map<String, String> keywordToStaticIdMap;
 }
