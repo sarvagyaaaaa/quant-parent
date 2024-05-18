@@ -1,0 +1,652 @@
+[
+  {
+    "name": "data1",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "1",
+        "paramName": "Weak Signal Strength Check",
+        "status": "Success",
+        "actions": "do this"
+      },
+      {
+        "staticId": "2",
+        "paramName": "Interference Check",
+        "status": "Process",
+        "actions": "do this"
+      },
+      {
+        "staticId": "3",
+        "paramName": "Congestion Check",
+        "status": "Failure",
+        "actions": "do this"
+      },
+      {
+        "staticId": "4",
+        "paramName": "Outdated Firmware Check",
+        "status": "Success",
+        "actions": "do this"
+      },
+      {
+        "staticId": "5",
+        "paramName": "Incorrect Configuration Check",
+        "status": "Failure",
+        "actions": "do this"
+      },
+      {
+        "staticId": "6",
+        "paramName": "Hardware Failure Check",
+        "status": "Failure",
+        "actions": "do this"
+      },
+      {
+        "staticId": "7",
+        "paramName": "Overheating Check",
+        "status": "Process",
+        "actions": "do this"
+      },
+      {
+        "staticId": "8",
+        "paramName": "Firmware bugs Check",
+        "status": "Success",
+        "actions": "do this"
+      },
+      {
+        "staticId": "9",
+        "paramName": "Security vulnerabilities Check",
+        "status": "Process",
+        "actions": "do this"
+      },
+      {
+        "staticId": "10",
+        "paramName": "Channel Check",
+        "status": "Success",
+        "actions": "do this"
+      }
+    ]
+  },
+  {
+    "name": "data2",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "11",
+        "paramName": "New Check 1",
+        "status": "Success",
+        "actions": "do that"
+      },
+      {
+        "staticId": "12",
+        "paramName": "New Check 2",
+        "status": "Process",
+        "actions": "do that"
+      },
+      {
+        "staticId": "13",
+        "paramName": "New Check 3",
+        "status": "Failure",
+        "actions": "do that"
+      },
+      {
+        "staticId": "14",
+        "paramName": "New Check 4",
+        "status": "Success",
+        "actions": "do that"
+      },
+      {
+        "staticId": "15",
+        "paramName": "New Check 5",
+        "status": "Failure",
+        "actions": "do that"
+      },
+      {
+        "staticId": "16",
+        "paramName": "New Check 6",
+        "status": "Failure",
+        "actions": "do that"
+      },
+      {
+        "staticId": "17",
+        "paramName": "New Check 7",
+        "status": "Process",
+        "actions": "do that"
+      },
+      {
+        "staticId": "18",
+        "paramName": "New Check 8",
+        "status": "Success",
+        "actions": "do that"
+      },
+      {
+        "staticId": "19",
+        "paramName": "New Check 9",
+        "status": "Process",
+        "actions": "do that"
+      },
+      {
+        "staticId": "20",
+        "paramName": "New Check 10",
+        "status": "Success",
+        "actions": "do that"
+      }
+    ]
+  },
+  {
+    "name": "data3",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "21",
+        "paramName": "Another New Check 1",
+        "status": "Success",
+        "actions": "do something"
+      },
+      {
+        "staticId": "22",
+        "paramName": "Another New Check 2",
+        "status": "Process",
+        "actions": "do something"
+      },
+      {
+        "staticId": "23",
+        "paramName": "Another New Check 3",
+        "status": "Failure",
+        "actions": "do something"
+      },
+      {
+        "staticId": "24",
+        "paramName": "Another New Check 4",
+        "status": "Success",
+        "actions": "do something"
+      },
+      {
+        "staticId": "25",
+        "paramName": "Another New Check 5",
+        "status": "Failure",
+        "actions": "do something"
+      },
+      {
+        "staticId": "26",
+        "paramName": "Another New Check 6",
+        "status": "Failure",
+        "actions": "do something"
+      },
+      {
+        "staticId": "27",
+        "paramName": "Another New Check 7",
+        "status": "Process",
+        "actions": "do something"
+      },
+      {
+        "staticId": "28",
+        "paramName": "Another New Check 8",
+        "status": "Success",
+        "actions": "do something"
+      },
+      {
+        "staticId": "29",
+        "paramName": "Another New Check 9",
+        "status": "Process",
+        "actions": "do something"
+      },
+      {
+        "staticId": "30",
+        "paramName": "Another New Check 10",
+        "status": "Success",
+        "actions": "do something"
+      }
+    ]
+  },
+  {
+    "name": "data4",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "31",
+        "paramName": "Check A",
+        "status": "Success",
+        "actions": "perform action A"
+      },
+      {
+        "staticId": "32",
+        "paramName": "Check B",
+        "status": "Process",
+        "actions": "perform action B"
+      },
+      {
+        "staticId": "33",
+        "paramName": "Check C",
+        "status": "Failure",
+        "actions": "perform action C"
+      },
+      {
+        "staticId": "34",
+        "paramName": "Check D",
+        "status": "Success",
+        "actions": "perform action D"
+      },
+      {
+        "staticId": "35",
+        "paramName": "Check E",
+        "status": "Failure",
+        "actions": "perform action E"
+      },
+      {
+        "staticId": "36",
+        "paramName": "Check F",
+        "status": "Failure",
+        "actions": "perform action F"
+      },
+      {
+        "staticId": "37",
+        "paramName": "Check G",
+        "status": "Process",
+        "actions": "perform action G"
+      },
+      {
+        "staticId": "38",
+        "paramName": "Check H",
+        "status": "Success",
+        "actions": "perform action H"
+      },
+      {
+        "staticId": "39",
+        "paramName": "Check I",
+        "status": "Process",
+        "actions": "perform action I"
+      },
+      {
+        "staticId": "40",
+        "paramName": "Check J",
+        "status": "Success",
+        "actions": "perform action J"
+      }
+    ]
+  },
+  {
+    "name": "data5",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "41",
+        "paramName": "Additional Check 1",
+        "status": "Success",
+        "actions": "additional action 1"
+      },
+      {
+        "staticId": "42",
+        "paramName": "Additional Check 2",
+        "status": "Process",
+        "actions": "additional action 2"
+      },
+      {
+        "staticId": "43",
+        "paramName": "Additional Check 3",
+        "status": "Failure",
+        "actions": "additional action 3"
+      },
+      {
+        "staticId": "44",
+        "paramName": "Additional Check 4",
+        "status": "Success",
+        "actions": "additional action 4"
+      },
+      {
+        "staticId": "45",
+        "paramName": "Additional Check 5",
+        "status": "Failure",
+        "actions": "additional action 5"
+      },
+      {
+        "staticId": "46",
+        "paramName": "Additional Check 6",
+        "status": "Failure",
+        "actions": "additional action 6"
+      },
+      {
+        "staticId": "47",
+        "paramName": "Additional Check 7",
+        "status": "Process",
+        "actions": "additional action 7"
+      },
+      {
+        "staticId": "48",
+        "paramName": "Additional Check 8",
+        "status": "Success",
+        "actions": "additional action 8"
+      },
+      {
+        "staticId": "49",
+        "paramName": "Additional Check 9",
+        "status": "Process",
+        "actions": "additional action 9"
+      },
+      {
+        "staticId": "50",
+        "paramName": "Additional Check 10",
+        "status": "Success",
+        "actions": "additional action 10"
+      }
+    ]
+  },
+  {
+    "name": "data6",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "51",
+        "paramName": "Last Check 1",
+        "status": "Success",
+        "actions": "last action 1"
+      },
+      {
+        "staticId": "52",
+        "paramName": "Last Check 2",
+        "status": "Process",
+        "actions": "last action 2"
+      },
+      {
+        "staticId": "53",
+        "paramName": "Last Check 3",
+        "status": "Failure",
+        "actions": "last action 3"
+      },
+      {
+        "staticId": "54",
+        "paramName": "Last Check 4",
+        "status": "Success",
+        "actions": "last action 4"
+      },
+      {
+        "staticId": "55",
+        "paramName": "Last Check 5",
+        "status": "Failure",
+        "actions": "last action 5"
+      },
+      {
+        "staticId": "56",
+        "paramName": "Last Check 6",
+        "status": "Failure",
+        "actions": "last action 6"
+      },
+      {
+        "staticId": "57",
+        "paramName": "Last Check 7",
+        "status": "Process",
+        "actions": "last action 7"
+      },
+      {
+        "staticId": "58",
+        "paramName": "Last Check 8",
+        "status": "Success",
+        "actions": "last action 8"
+      },
+      {
+        "staticId": "59",
+        "paramName": "Last Check 9",
+        "status": "Process",
+        "actions": "last action 9"
+      },
+      {
+        "staticId": "60",
+        "paramName": "Last Check 10",
+        "status": "Success",
+        "actions": "last action 10"
+      }
+    ]
+  },
+  {
+    "name": "data7",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "61",
+        "paramName": "Check X",
+        "status": "Success",
+        "actions": "perform action X"
+      },
+      {
+        "staticId": "62",
+        "paramName": "Check Y",
+        "status": "Process",
+        "actions": "perform action Y"
+      },
+      {
+        "staticId": "63",
+        "paramName": "Check Z",
+        "status": "Failure",
+        "actions": "perform action Z"
+      },
+      {
+        "staticId": "64",
+        "paramName": "Check W",
+        "status": "Success",
+        "actions": "perform action W"
+      },
+      {
+        "staticId": "65",
+        "paramName": "Check V",
+        "status": "Failure",
+        "actions": "perform action V"
+      },
+      {
+        "staticId": "66",
+        "paramName": "Check U",
+        "status": "Failure",
+        "actions": "perform action U"
+      },
+      {
+        "staticId": "67",
+        "paramName": "Check T",
+        "status": "Process",
+        "actions": "perform action T"
+      },
+      {
+        "staticId": "68",
+        "paramName": "Check S",
+        "status": "Success",
+        "actions": "perform action S"
+      },
+      {
+        "staticId": "69",
+        "paramName": "Check R",
+        "status": "Process",
+        "actions": "perform action R"
+      },
+      {
+        "staticId": "70",
+        "paramName": "Check Q",
+        "status": "Success",
+        "actions": "perform action Q"
+      }
+    ]
+  },
+  {
+    "name": "data8",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "71",
+        "paramName": "Test Check 1",
+        "status": "Success",
+        "actions": "test action 1"
+      },
+      {
+        "staticId": "72",
+        "paramName": "Test Check 2",
+        "status": "Process",
+        "actions": "test action 2"
+      },
+      {
+        "staticId": "73",
+        "paramName": "Test Check 3",
+        "status": "Failure",
+        "actions": "test action 3"
+      },
+      {
+        "staticId": "74",
+        "paramName": "Test Check 4",
+        "status": "Success",
+        "actions": "test action 4"
+      },
+      {
+        "staticId": "75",
+        "paramName": "Test Check 5",
+        "status": "Failure",
+        "actions": "test action 5"
+      },
+      {
+        "staticId": "76",
+        "paramName": "Test Check 6",
+        "status": "Failure",
+        "actions": "test action 6"
+      },
+      {
+        "staticId": "77",
+        "paramName": "Test Check 7",
+        "status": "Process",
+        "actions": "test action 7"
+      },
+      {
+        "staticId": "78",
+        "paramName": "Test Check 8",
+        "status": "Success",
+        "actions": "test action 8"
+      },
+      {
+        "staticId": "79",
+        "paramName": "Test Check 9",
+        "status": "Process",
+        "actions": "test action 9"
+      },
+      {
+        "staticId": "80",
+        "paramName": "Test Check 10",
+        "status": "Success",
+        "actions": "test action 10"
+      }
+    ]
+  },
+  {
+    "name": "data9",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "81",
+        "paramName": "Validation Check 1",
+        "status": "Success",
+        "actions": "validate action 1"
+      },
+      {
+        "staticId": "82",
+        "paramName": "Validation Check 2",
+        "status": "Process",
+        "actions": "validate action 2"
+      },
+      {
+        "staticId": "83",
+        "paramName": "Validation Check 3",
+        "status": "Failure",
+        "actions": "validate action 3"
+      },
+      {
+        "staticId": "84",
+        "paramName": "Validation Check 4",
+        "status": "Success",
+        "actions": "validate action 4"
+      },
+      {
+        "staticId": "85",
+        "paramName": "Validation Check 5",
+        "status": "Failure",
+        "actions": "validate action 5"
+      },
+      {
+        "staticId": "86",
+        "paramName": "Validation Check 6",
+        "status": "Failure",
+        "actions": "validate action 6"
+      },
+      {
+        "staticId": "87",
+        "paramName": "Validation Check 7",
+        "status": "Process",
+        "actions": "validate action 7"
+      },
+      {
+        "staticId": "88",
+        "paramName": "Validation Check 8",
+        "status": "Success",
+        "actions": "validate action 8"
+      },
+      {
+        "staticId": "89",
+        "paramName": "Validation Check 9",
+        "status": "Process",
+        "actions": "validate action 9"
+      },
+      {
+        "staticId": "90",
+        "paramName": "Validation Check 10",
+        "status": "Success",
+        "actions": "validate action 10"
+      }
+    ]
+  },
+  {
+    "name": "data10",
+    "staticHealthCheckResults": [
+      {
+        "staticId": "91",
+        "paramName": "Last Validation 1",
+        "status": "Success",
+        "actions": "last validation action 1"
+      },
+      {
+        "staticId": "92",
+        "paramName": "Last Validation 2",
+        "status": "Process",
+        "actions": "last validation action 2"
+      },
+      {
+        "staticId": "93",
+        "paramName": "Last Validation 3",
+        "status": "Failure",
+        "actions": "last validation action 3"
+      },
+      {
+        "staticId": "94",
+        "paramName": "Last Validation 4",
+        "status": "Success",
+        "actions": "last validation action 4"
+      },
+      {
+        "staticId": "95",
+        "paramName": "Last Validation 5",
+        "status": "Failure",
+        "actions": "last validation action 5"
+      },
+      {
+        "staticId": "96",
+        "paramName": "Last Validation 6",
+        "status": "Failure",
+        "actions": "last validation action 6"
+      },
+      {
+        "staticId": "97",
+        "paramName": "Last Validation 7",
+        "status": "Process",
+        "actions": "last validation action 7"
+      },
+      {
+        "staticId": "98",
+        "paramName": "Last Validation 8",
+        "status": "Success",
+        "actions": "last validation action 8"
+      },
+      {
+        "staticId": "99",
+        "paramName": "Last Validation 9",
+        "status": "Process",
+        "actions": "last validation action 9"
+      },
+      {
+        "staticId": "100",
+        "paramName": "Last Validation 10",
+        "status": "Success",
+        "actions": "last validation action 10"
+      }
+    ]
+  }
+]
