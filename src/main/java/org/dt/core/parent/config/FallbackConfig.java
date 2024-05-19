@@ -19,4 +19,6 @@ public class FallbackConfig {
     public static final String PREFIX = "fallback";
 
     private Map<String, List<String>> dataIdToIntelligenceFallbackResponseMap;
+
+    private Map<String, String> paramToSolutionMap;
 }
