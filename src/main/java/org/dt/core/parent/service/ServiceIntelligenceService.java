@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -72,9 +73,9 @@ public class ServiceIntelligenceService {
     public List<ParameterSpecificSolution> fetchSmartSolutions(DeviceTroubleshootDetails deviceTroubleshootDetails) throws JsonProcessingException {
         RestTemplate template = createRestTemplateWithTimeout(llmConnectionConfig.getWaitBeforeFallbackTrigger()); // 5000 milliseconds = 5 seconds
         String url = llmConnectionConfig.getUrl();
-        List<String> impactedParameters = SystemHealthService.healthCheckTOS().stream().filter(e->deviceTroubleshootDetails.getPriorityToImpactedParameterIds().containsValue(e)).map(e->e.getName()).toList();
+        List<String> impactedParameters = SystemHealthService.healthCheckTOS().stream().filter(e -> deviceTroubleshootDetails.getPriorityToImpactedParameterIds().containsValue(e)).map(e -> e.getName()).toList();
         StringBuilder stringBuilder = new StringBuilder("");
-        impactedParameters.forEach(e-> stringBuilder.append(e).append("_"));
+        impactedParameters.forEach(e -> stringBuilder.append(e).append("_"));
         HttpEntity<String> httpEntity = new HttpEntity<>(stringBuilder.toString());
 
         CompletableFuture<ResponseEntity<String>> future = CompletableFuture.supplyAsync(() ->
@@ -83,16 +84,22 @@ public class ServiceIntelligenceService {
         List<ParameterSpecificSolution> list;
         try {
             ResponseEntity<String> stringResponseEntity = future.get(5, TimeUnit.SECONDS);
-            List<String> solutions = Arrays.stream(stringResponseEntity.getBody().split("_")).toList();
-            list = deviceTroubleshootDetails.getPriorityToImpactedParameterIds().values().stream().map(i-> ParameterSpecificSolution.builder().name(i).action(fallbackConfig.getParamToSolutionMap().get(i)).build()).collect(Collectors.toList()); ;
             if (stringResponseEntity == null || stringResponseEntity.getBody() == null) {
                 throw new TimeoutException("No response from API");
             }
+            List<String> solutions = Arrays.stream(stringResponseEntity.getBody().split("_")).toList();
+            list = solutions.stream().map(e -> {
+                String[] details = e.split("_");
+                String param = details[0];
+                String action = details[1];
+                return ParameterSpecificSolution.builder().action(action).name(param).build();
+            }).toList();
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            list = deviceTroubleshootDetails.getPriorityToImpactedParameterIds().values().stream().map(i-> ParameterSpecificSolution.builder().name(i).action(fallbackConfig.getParamToSolutionMap().get(i)).build()).collect(Collectors.toList()); ;
+            list = deviceTroubleshootDetails.getPriorityToImpactedParameterIds().values().stream().map(i -> ParameterSpecificSolution.builder().name(i).action(fallbackConfig.getParamToSolutionMap().get(i)).build()).collect(Collectors.toList());
+
         }
 
-            return list;
+        return list;
 
     }
 }

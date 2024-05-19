@@ -4,61 +4,61 @@
     "staticHealthCheckResults": [
       {
         "staticId": "1",
-        "paramName": "Weak Signal Strength Check",
+        "paramName": "Connectivity",
         "status": "Success",
         "actions": "do this"
       },
       {
         "staticId": "2",
-        "paramName": "Interference Check",
-        "status": "Process",
+        "paramName": "dataLimit",
+        "status": "Failure",
         "actions": "do this"
       },
       {
         "staticId": "3",
-        "paramName": "Congestion Check",
+        "paramName": "pendingBill",
         "status": "Failure",
         "actions": "do this"
       },
       {
         "staticId": "4",
-        "paramName": "Outdated Firmware Check",
+        "paramName": "signalStrength",
         "status": "Success",
         "actions": "do this"
       },
       {
         "staticId": "5",
-        "paramName": "Incorrect Configuration Check",
+        "paramName": "dNSSetting",
         "status": "Failure",
         "actions": "do this"
       },
       {
         "staticId": "6",
-        "paramName": "Hardware Failure Check",
-        "status": "Failure",
+        "paramName": "hardwareHealth",
+        "status": "Success",
         "actions": "do this"
       },
       {
         "staticId": "7",
-        "paramName": "Overheating Check",
-        "status": "Process",
+        "paramName": "routerOnlineCheck",
+        "status": "Success",
         "actions": "do this"
       },
       {
         "staticId": "8",
-        "paramName": "Firmware bugs Check",
+        "paramName": "wifibandinuse",
         "status": "Success",
         "actions": "do this"
       },
       {
         "staticId": "9",
-        "paramName": "Security vulnerabilities Check",
-        "status": "Process",
+        "paramName": "securityVulnerabilities",
+        "status": "Success",
         "actions": "do this"
       },
       {
         "staticId": "10",
-        "paramName": "Channel Check",
+        "paramName": "channelCheck",
         "status": "Success",
         "actions": "do this"
       }
