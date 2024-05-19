@@ -1,0 +1,18 @@
+llm:
+  url: ""
+  waitBeforeFallbackTrigger: 5000
+  keywordToStaticIdMap:
+    MESH: 1
+    VOIP: 2
+    CUJO: 3
+
+fallback:
+  dataIdToIntelligenceFallbackResponseMap:
+    data1:
+      - 3
+
+
+
+spring:
+  application:
+    name=quant-parent:

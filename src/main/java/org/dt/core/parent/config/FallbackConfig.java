@@ -6,22 +6,17 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
-import java.time.Duration;
+import java.util.List;
 import java.util.Map;
 
 @Configuration
-@ConfigurationProperties(prefix = LLMConnectionConfig.PREFIX, ignoreUnknownFields = false)
+@ConfigurationProperties(prefix = FallbackConfig.PREFIX, ignoreUnknownFields = false)
 //@Scope("refresh")
 @Getter
 @Setter
 
-public class LLMConnectionConfig {
+public class FallbackConfig {
+    public static final String PREFIX = "fallback";
 
-    public static final String PREFIX = "llm";
-
-    private String url;
-
-    private Integer waitBeforeFallbackTrigger;
-
-    private Map<String, String> keywordToStaticIdMap;
+    private Map<String, List<String>> dataIdToIntelligenceFallbackResponseMap;
 }
